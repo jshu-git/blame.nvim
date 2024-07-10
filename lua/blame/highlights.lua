@@ -49,11 +49,11 @@ M.get_hld_lines_from_porcelain = function(porcelain_lines, config)
                 idx = idx,
                 values = {
                     {
-                        textValue = "",
-                        hl = nil,
+                        textValue = "│",
+                        hl = "NonText",
                     },
                 },
-                format = "",
+                format = "%s",
             }
         else
             local line_with_hl = config.format_fn(v, config, idx)
