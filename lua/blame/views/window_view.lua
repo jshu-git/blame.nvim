@@ -162,7 +162,7 @@ function WindowView:open(lines)
             { win = self.blame_window }
         )
     end
-    vim.api.nvim_set_current_win(self.original_window)
+    -- vim.api.nvim_set_current_win(self.original_window)
 
     local file_path = vim.api.nvim_buf_get_name(
         vim.api.nvim_win_get_buf(self.original_window)
